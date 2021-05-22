@@ -4,11 +4,13 @@ function Person(name, age) {
   this.stomach = [];
   this.eat = function eat(foodName) {
     if (this.stomach.length < 10) {
-      return this.stomach.push(this.foodName);
+      this.stomach.push(foodName);
+      return this.stomach
     }
   };
   this.poop = function poop(params) {
-    return (this.stomach = []);
+    this.stomach.length = 0;
+    return this.stomach
   };
   this.toString = function toString() {
     return `${this.name} ${this.age} `;
