@@ -4,11 +4,11 @@ function Person(name, age) {
     age,
     compareAge(obj) {
       if (this.age < obj.age) {
-        return `${this.name} is younger than me.`;
+        return `${obj.name} is younger than me.`;
       } else if (this.age > obj.age) {
-        return `${this.name} is older than me.`;
+        return `${obj.name} is older than me.`;
       } else {
-        return `${this.name} is the same age as me.`;
+        return `${obj.name} is the same age as me.`;
       }
     },
   };
